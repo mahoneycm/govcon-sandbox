@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+  {% include "head.html" %}
+
+  <body {% if bodyClass %} class="{{ bodyClass }}" {% endif %}>
+    <div class="sticky-footer-wrapper">
+      {% include "skipnav.html" %} {% include "banner.html" %}
+
+      <div class="sticky-footer-wrapper__body">
+        <!-- Header -->
+        {% unless page.layout == multi-col %} {% include "header--extended.html"
+        %} {% endunless %}
+
+        <!-- Content block -->
+        <main id="main-content">{{ content }}</main>
+      </div>
+
+      <!-- Footer -->
+      {% unless page.layout == multi-col %} {% include "footer--slim.html" %} {%
+      endunless %}
+
+      <!-- Identifier -->
+      {% include "identifier.html" %}
+    </div>
+
+    <script src="{{ '/assets/js/uswds.min.js' | url }}"></script>
+  </body>
+</html>

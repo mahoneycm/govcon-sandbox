@@ -1,0 +1,21 @@
+{
+  "primary": [
+    {
+      "name": "News"
+    },
+    {
+      "name": "Community"
+    },
+    {
+      "name": "Contact"
+    }
+  ],
+  "secondary": [
+    {
+      "name": "About"
+    },
+    {
+      "name": "Subscribe to our newsletter"
+    }
+  ]
+}
